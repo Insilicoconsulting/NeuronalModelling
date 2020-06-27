@@ -16,11 +16,14 @@ client = mqtt.Client("imacLinux") #create new instance
 client.on_message=on_message #attach function to callback
 print("connecting to broker")
 client.connect(broker_address) #connect to broker
+client.loop_start() #start the loop
+client.on_message=on_message #attach function to callback
 for i in signal1:
-    client.loop_start() #start the loop
+  
     print("Subscribing to topic","house/bulbs/bulb1")
     client.subscribe("house/bulbs/bulb1")
     print("Publishing message to topic","house/bulbs/bulb1")
     client.publish("house/bulbs/bulb1","On")
-    time.sleep(i) # wait
-    client.loop_stop() #stop the loop
+    time.sleep(2) # wait
+
+client.loop_stop() #stop the loop
