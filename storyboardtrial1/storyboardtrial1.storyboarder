@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "aspectRatio": "1.3333333333333333",
+  "fps": 24,
+  "defaultBoardTiming": 2000,
+  "boards": [
+    {
+      "uid": "PZZJ3",
+      "url": "board-1-PZZJ3.png",
+      "newShot": false,
+      "lastEdited": 1591899648382,
+      "layers": {},
+      "number": 1,
+      "shot": "1A",
+      "time": 0
+    }
+  ]
+}
